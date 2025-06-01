@@ -15,7 +15,7 @@ app.use("/api", userDashboard)
 
 const start = async () => {
   try {
-    connectDB()
+    await connectDB()
     app.listen(3000, () => {
       console.log("Server berjalan di port 3000")
     })
